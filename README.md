@@ -22,7 +22,17 @@ class User < ActiveRecord::Base
   include ClassCacher
 end
 ```
-then use it like this User.unique_class_cache_key or even better User.cached_unique_class_cache_key
+then use it like this 
+
+```ruby
+User.unique_class_cache_key
+```
+
+or even better
+
+```ruby
+User.cached_unique_class_cache_key
+```
 
 Shuold be used together with memcached and the dalli gem (or similar)
 
