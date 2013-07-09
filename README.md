@@ -1,6 +1,6 @@
 # ClassCacher
 
-TODO: Write a gem description
+Generates a unique cache key for Rails classes
 
 ## Installation
 

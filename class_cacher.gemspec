@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = ClassCacher::VERSION
   spec.authors       = ["Nicolai Seerup"]
   spec.email         = ["mail@soundtracktor.com"]
-  spec.description   = %q{Generates a unique cache key for classes}
+  spec.description   = %q{Generates a unique cache key Rails classes}
   spec.summary       = %q{What is a gem summary}
   spec.homepage      = ""
   spec.license       = "MIT"
