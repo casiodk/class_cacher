@@ -1,6 +1,6 @@
 # ClassCacher
 
-Generates a unique cache key for Rails classes
+Generates a unique cache key for for Rails classes. Should be used together with dalli gem and memcached.
 
 [![Build Status](https://travis-ci.org/casiodk/class_cacher.png?branch=master)](https://travis-ci.org/casiodk/class_cacher)
 
