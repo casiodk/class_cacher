@@ -2,6 +2,8 @@
 
 Generates a unique cache key for Rails classes
 
+[![Build Status](https://travis-ci.org/casiodk/class_cacher.png?branch=master)](https://travis-ci.org/casiodk/class_cacher)
+
 ## Installation
 
 Add this line to your application's Gemfile:
