@@ -17,11 +17,11 @@ Or install it yourself as:
     $ gem install class_cacher
 
 ## Usage
-
+```ruby
 class User < ActiveRecord::Base
   include ClassCacher
 end
-
+```
 then use it like this User.unique_class_cache_key or even better User.cached_unique_class_cache_key
 
 Shuold be used together with memcached and the dalli gem (or similar)
