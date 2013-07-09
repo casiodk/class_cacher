@@ -36,7 +36,7 @@ or even better
 User.cached_unique_class_cache_key
 ```
 
-Shuold be used together with memcached and the dalli gem (or similar)
+Should be used together with memcached and the dalli gem (or similar)
 
 ## Contributing
 
