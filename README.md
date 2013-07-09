@@ -21,7 +21,7 @@ Or install it yourself as:
 ## Usage
 ```ruby
 class User < ActiveRecord::Base
-  include ClassCacher
+  unique_class_cache
 end
 ```
 then use it like this 
