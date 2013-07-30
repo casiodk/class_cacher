@@ -1,10 +1,10 @@
 module ClassCacher
   module ModelAdditions
     def unique_class_cache
-      after_commit :flush_unique_class_cache_key
+      after_commit  :flush_unique_class_cache_key
       after_destroy :flush_unique_class_cache_key
-      after_update :flush_unique_class_cache_key
-      after_create :flush_unique_class_cache_key
+      after_update  :flush_unique_class_cache_key
+      after_create  :flush_unique_class_cache_key
 
     private
       def self.flush_unique_class_cache_key
