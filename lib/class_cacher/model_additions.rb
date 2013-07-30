@@ -3,10 +3,12 @@ module ClassCacher
     def unique_class_cache
       after_commit :flush_unique_class_cache_key
       after_destroy :flush_unique_class_cache_key
+      after_save :flush_unique_class_cache_key
 
     private
       def flush_unique_class_cache_key
-        Rails.cache.delete(["cached_unique_class_cache_key", self.class.name])
+        puts "Flush"
+        #Rails.cache.delete(["cached_unique_class_cache_key", self.class.name])
       end
 
       def self.unique_class_cache_key
@@ -19,7 +21,8 @@ module ClassCacher
       end
 
       def self.cached_unique_class_cache_key
-        Rails.cache.fetch(["cached_unique_class_cache_key", self.name]) { self.unique_class_cache_key }
+        puts "cached"
+        #Rails.cache.fetch(["cached_unique_class_cache_key", self.name]) { self.unique_class_cache_key }
       end
     end
   end
