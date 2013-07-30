@@ -6,11 +6,11 @@ module ClassCacher
       after_update :flush_unique_class_cache_key
       after_create :flush_unique_class_cache_key
 
-      def flush_unique_class_cache_key
-        Rails.cache.delete(["cached_unique_class_cache_key", self.class.name])
+    private
+      def self.flush_unique_class_cache_key
+        Rails.cache.delete(["cached_unique_class_cache_key", self.name])
       end
 
-    private
       def self.unique_class_cache_key
         max_updated_at        = self.pluck("MAX(updated_at)").first.to_s
         parsed_max_updated_at = "#{ max_updated_at.present? ? DateTime.parse(max_updated_at).utc.to_s(:number) : nil }"
