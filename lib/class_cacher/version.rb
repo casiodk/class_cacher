@@ -1,3 +1,3 @@
 module ClassCacher
-  VERSION = "0.0.3alpha"
+  VERSION = "0.0.3beta"
 end
